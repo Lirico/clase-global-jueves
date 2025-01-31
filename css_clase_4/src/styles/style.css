@@ -1,0 +1,40 @@
+* {
+    box-sizing: box;
+    margin: 0;
+}
+
+
+/*********** FLEXBOX ***********/
+/* 
+    Un sistema de distribucion de cajas.
+    Y nos permite flexibilizar dicha distribucion.
+*/
+/* 
+    La disposicion flexible se establece en el contenedor padre.
+    Esto habilita el uso de nuevas propiedades que afectaran la distribucion de los hijos.
+*/
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: row; /* Elegir la direccion de despligue de los elementos hijos */
+    justify-content: center; /* Distribuir los elementos en el eje X */
+    align-items: center; /* Distribuir los elementos en el eje Y */
+    gap: 40px; /* Genera una brecha entre las cajitas */
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+.uno {
+    align-self: end;
+}
+
+.tres {
+    align-self: start;
+}
